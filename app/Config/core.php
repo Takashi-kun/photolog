@@ -194,12 +194,14 @@
 /**
  * A random string used in security hashing methods.
  */
-	Configure::write('Security.salt', 'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi');
+ //'photolog'のsha1 hash
+	Configure::write('Security.salt', '508162b954e7535c91c2fc79b43e94d7266ed3ca');
 
 /**
  * A random numeric string (digits only) used to encrypt/decrypt strings.
  */
-	Configure::write('Security.cipherSeed', '76859309657453542496749683645');
+ //'photolog' => 16hex => 10hex
+	Configure::write('Security.cipherSeed', '8099846475702104000');
 
 /**
  * Apply timestamps with the last modified time to static assets (js, css, images).
